@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;    
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    transition-timing-function: ease;
+}
+
+html {
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+body {
+    max-width: 1920px;
+    margin: auto;
+}
+
+
+header.cabecalho {
+    width: 100vw;
+    margin: auto;
+    max-width: 1920px;
+    height: 238px;
+    position: relative;
+    padding: 20px;
+    background: url(../imagens/pexels-skitterphoto-615350.jpg) no-repeat;
+    background-size: cover;
+    background-position: center ;
+    box-shadow: 14px 2px 9px rgba(0, 0, 0, 0.096);   
+}
+
+header.cabecalho > div.logo {
+    position: absolute;
+    top: -2%;
+    left: -25px;
+    opacity: .8;
+}
+
+header.cabecalho > div.logo > img {
+    height: 243px;
+}
+
+header.cabecalho > div.fixo {    
+    width: 100vw;
+    max-width: 1920px;
+    display: block;
+    position: fixed;
+    text-align: right;
+    margin-left: -22px;
+    margin-top: -18px;
+}
+
+header.cabecalho > div.fixo > span#burguer {
+    width: 40px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 2em;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.815);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+header.cabecalho > div.fixo > div.menu {
+    display: none;
+    text-align: right;
+    position: relative;
+    right: -10px;
+    
+    
+}
+
+header.cabecalho > div.fixo > div.menu > ul {
+    list-style-type: none;
+    position: relative;
+    
+}
+
+header.cabecalho > div.fixo > div.menu > ul > li {
+    font-size: 1.2em;
+    padding: 10px;
+       
+}
+
+header.cabecalho > div.fixo > div.menu > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+header.cabecalho > div.fixo > div.menu > ul > li > a:hover {
+    background-color: lightgrey;
+    color: black;
+    transition: .3s;    
+}
+
+header.cabecalho > div.fixo > div.menu > ul > li > a:active {
+    background-color: rgb(148, 148, 148);
+    color: rgba(0, 0, 0, 0.582);
+}
+
+header.cabecalho > div.wpp {
+   position: fixed;
+   width: 100vw;
+   max-width: 1920px;
+   text-align: right;
+   padding: 10px 30px;
+   bottom: 2px;
+}
+
+header.cabecalho > div.wpp > a > img {
+    height: 60px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    border-radius: 50%;
+}
+
+header.cabecalho > div.wpp > a > img:hover {
+    border: 3px solid rgba(255, 255, 255, 0.637);
+    box-sizing: border-box;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform .3s, border .7s;
+}
+
+header.cabecalho > div.wpp > a > img:active {
+    border: 3px solid rgba(255, 255, 255, 0.637);
+    box-sizing: border-box;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform .3s, border .7s;
+}
+
+
+main.corpo > section.servicos {
+    width: 100vw;
+    max-width: 1920px;
+    margin: auto;
+    
+    
+}
+
+.txt-servicos {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.txt-servicos > h2{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px black;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.img-servicos > img {
+    height: 66px;
+}
+
+.paragrafo > p {
+    font-family: 'Prompt', sans-serif;
+    padding: 0px 30px;
+    font-size: 1.3em;
+    
+}
+
+.img-chaves {
+    margin-top: 30px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 10px;
+    background-image: linear-gradient(to right, #771d32c2, #e65757c7);
+    box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.281);
+    
+}
+
+.img-chaves > img {
+    width: 250px;
+    height: 70vh;
+    border-radius: 10px;
+}

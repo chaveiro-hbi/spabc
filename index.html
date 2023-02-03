@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBI CHAVEIRO | SEU CHAVEIRO DE CONFIANÇA</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=PT+Sans:wght@700&family=Prompt:wght@200&display=swap" rel="stylesheet">
+</head>
+<body onresize="mudouTamanho()">
+
+    <header class="cabecalho" id="cabecalho">
+        <div class="logo">
+            <img src="imagens/IMG-20230117-WA0007.jpg" alt="Imagem do logo do chaveiro HBI">
+        </div>
+
+        <div class="fixo">
+            <span id="burguer" class="material-icons" onclick="clickMenu()">
+                menu
+            </span>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="#cabecalho" id="clickmenu" onclick="click2Menu()">Home</a></li>
+                    <li><a href="#servicos" id="clickmenu" onclick="click2Menu()">Serviços</a></li>
+                    <li><a href="#localizacao" id="clickmenu" onclick="click2Menu()">Localização</a></li>
+                    <li><a href="#contato" id="clickmenu" onclick="click2Menu()">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wpp" id="wpp">
+            <a href="https://wa.me/5511932982390?text=Olá, gostaria de solicitar um serviço." target="_blank"><img src="imagens/whatsapp.png" alt="ícone do WhatsApp do chaveiro HBI - Contato"></a>
+        </div>
+
+    </header>
+
+    <main class="corpo">
+        <section class="servicos" id="servicos">
+            <div class="txt-servicos">
+                
+                <div class="img-servicos">
+                    <img src="imagens/img-home.jpg" alt="">
+                </div>
+                &nbsp;&nbsp;
+                <h2>
+                    Chaveiro HBI 24h no ABC e SP
+                </h2>
+                
+            </div>
+
+            <div class="paragrafo">
+                <p>
+                    Atendimento com agilidade emergencial, de maneira confiável. Soluções <strong>automotivas, comerciais e residenciais, consertos e instalações de fechaduras.</strong>
+                </p>
+                <p>
+                    Fazemos cópias de chaves (Yale, Tetra, Gorja, Chaves originais, etc.)
+                </p>
+            </div>
+            <div class="img-chaves">
+                <img src="imagens/img1.jpg" alt="">
+                <img src="imagens/img2.jpg" alt="">
+                <img src="imagens/img3.jpg" alt="">
+
+            </div>
+    
+        
+        </section>
+
+        <section class="localizacao" id="localizacao">
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14604.11190277054!2d-46.50884023473478!3d-23.78201810768044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2sbr!4v1674772380760!5m2!1spt-PT!2sbr" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+
+        <section class="contato" id="contato">
+            <div class="icones">
+                <img src="imagens/whatsapp.png" alt="" height="200">
+                <img src="imagens/logo-instagram.jpg" alt="" height="200" >
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="copy">
+            <p>Copyright © 2023 HBI Chaveiro. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Caio Alexandre</p>
+        </div>
+    </footer>
+
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block'){
+            menu.style.display = 'none' 
+            } else {
+            menu.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                burguer.style.display = 'none'
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+                burguer.style.display = 'block'
+            }
+        }
+
+        function click2Menu() {
+            if (menu.style.display == 'block' && window.innerWidth <= 768){
+                menu.style.display = 'none'
+            }   
+        }
+    </script>
+
+</body>
+</html>
