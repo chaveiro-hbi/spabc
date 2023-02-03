@@ -2,7 +2,7 @@
 
 @media (min-width: 468px) {
     .img-chaves {
-        display: flex;
+        
         justify-content: space-around;
     }
 
@@ -118,7 +118,7 @@
     .paragrafo > p {
         font-size: 2.2em;
         font-weight: bolder;
-        text-indent: 3em;        
+                
     }
 
     .img-chaves > img {

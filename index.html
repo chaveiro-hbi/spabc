@@ -40,7 +40,7 @@
 
     </header>
 
-    <main class="corpo">
+
         <section class="servicos" id="servicos">
             <div class="txt-servicos">
                 
@@ -62,7 +62,24 @@
                     Fazemos cópias de chaves (Yale, Tetra, Gorja, Chaves originais, etc.)
                 </p>
             </div>
-            <div class="img-chaves">
+
+            <main class="corpo">
+                
+                <div class="carrossel" id="carrossel">
+                    <section class="galery">
+                        <div class="fotos">
+                            <img src="imagens/img1.jpg" alt="">
+                            <img src="imagens/img2.jpg" alt="">
+                            <img src="imagens/img3.jpg" alt="">
+                            <img src="imagens/img1.jpg" alt="">
+                            
+                        </div>
+            
+                    </section>
+                </div>
+            
+
+            <div class="img-chaves" id="imgChaves">
                 <img src="imagens/img1.jpg" alt="">
                 <img src="imagens/img2.jpg" alt="">
                 <img src="imagens/img3.jpg" alt="">
@@ -96,6 +113,7 @@
         </div>
     </footer>
 
+
     <script>
         function clickMenu() {
             if (menu.style.display == 'block'){
@@ -112,6 +130,18 @@
             } else {
                 menu.style.display = 'none'
                 burguer.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 468) {
+                carrossel.style.display = 'none'
+                imgChaves.style.display = 'flex'
+                
+                
+            } else {
+                imgChaves.style.display = 'none'
+                carrossel.style.display = 'block'
             }
         }
 
