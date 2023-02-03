@@ -161,7 +161,7 @@ main.corpo > section.servicos {
 .txt-servicos > h2{
     font-family: 'Outfit', sans-serif;
     font-size: 1.5em;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: .5px .5px .5px black;
     margin-bottom: 10px;
     text-align: center;
     padding: 5px;
