@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=PT+Sans:wght@700&family=Prompt:wght@200&display=swap" rel="stylesheet">
 </head>
-<body onresize="mudouTamanho()">
+<body onresize="mudouTamanho()" onload="mudouTamanhoo()">
 
     <header class="cabecalho" id="cabecalho">
         <div class="logo">
@@ -64,20 +64,21 @@
             </div>
 
             <main class="corpo">
+
+           
+    <div class="carrossel" id="carrossel">
+        <section class="galery">
+            <div class="fotos">
+                <img src="imagens/img1.jpg" alt="">
+                <img src="imagens/img2.jpg" alt="">
+                <img src="imagens/img3.jpg" alt="">
+                <img src="imagens/img1.jpg" alt="">
                 
-                <div class="carrossel" id="carrossel">
-                    <section class="galery">
-                        <div class="fotos">
-                            <img src="imagens/img1.jpg" alt="">
-                            <img src="imagens/img2.jpg" alt="">
-                            <img src="imagens/img3.jpg" alt="">
-                            <img src="imagens/img1.jpg" alt="">
-                            
-                        </div>
-            
-                    </section>
-                </div>
-            
+            </div>
+
+        </section>
+    </div>
+
 
             <div class="img-chaves" id="imgChaves">
                 <img src="imagens/img1.jpg" alt="">
@@ -123,27 +124,19 @@
             }
         }
 
+
         function mudouTamanho() {
             if (window.innerWidth >= 768) {
                 burguer.style.display = 'none'
                 menu.style.display = 'block'
+                
             } else {
                 menu.style.display = 'none'
                 burguer.style.display = 'block'
+                
             }
         }
-
-        function mudouTamanho() {
-            if (window.innerWidth >= 468) {
-                carrossel.style.display = 'none'
-                imgChaves.style.display = 'flex'
-                
-                
-            } else {
-                imgChaves.style.display = 'none'
-                carrossel.style.display = 'block'
-            }
-        }
+        
 
         function click2Menu() {
             if (menu.style.display == 'block' && window.innerWidth <= 768){

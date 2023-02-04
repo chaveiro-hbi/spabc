@@ -2,13 +2,21 @@
 
 @media (min-width: 468px) {
     .img-chaves {
-        
+        display: flex;
         justify-content: space-around;
+    }
+
+    #carrossel {
+        display: none;
     }
 
     .img-chaves > img {
         width: 140px;
         height: 187px;
+    }
+
+    .paragrafo > p {
+        padding: 0px 35px;
     }
 }
 
