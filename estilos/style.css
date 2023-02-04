@@ -6,7 +6,6 @@
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    transition-timing-function: ease;
 }
 
 html {
@@ -34,7 +33,8 @@ header.cabecalho {
     background: url(../imagens/pexels-skitterphoto-615350.jpg) no-repeat;
     background-size: cover;
     background-position: center left;
-    box-shadow: 14px 2px 9px rgba(0, 0, 0, 0.096);   
+    box-shadow: 14px 2px 9px rgba(0, 0, 0, 0.096);
+    transition-timing-function: ease;   
 }
 
 header.cabecalho > div.logo {
@@ -148,6 +148,7 @@ main.corpo > section.servicos {
     width: 100vw;
     max-width: 1920px;
     margin: auto;
+    transition-timing-function: ease;
     
 }
 
@@ -178,25 +179,25 @@ main.corpo > section.servicos {
     
 }
 
-.img-chaves {
+.img-chaves, .slide {
     display: none;
     margin-top: 30px;
     border-radius: 20px;
     text-align: center;
     padding: 30px 10px;
-    background-image: linear-gradient(to right, #771d3280, #e6575780);
+    background-image: linear-gradient(to right, #771d322c, #e657572c);
     box-shadow: 1px -1px 2.5px rgba(0, 0, 0, 0.220);
     
 }
 
-.img-chaves > img {
+.img-chaves > img, .slide > img {
     width: 250px;
     height: 334px;
     border-radius: 10px;
     box-shadow: 1px -1px 2.5px rgba(0, 0, 0, 0.220);
 }
 
-
+/*
 .carrossel {
     margin-top: 30px;
     display: block;
@@ -236,4 +237,16 @@ main.corpo > section.servicos {
     75% {margin-left: -300%;}
     95% {margin-left: -300%;}
     100% {margin-left: -400%;}
+}
+
+*/
+
+
+[data-component="slideshow"] .slide {
+	display: none;
+  text-align: center;
+}
+
+[data-component="slideshow"] .slide.active {
+	display: block;
 }

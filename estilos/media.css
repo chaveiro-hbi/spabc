@@ -1,14 +1,24 @@
 @charset "UTF-8";
 
-@media (min-width: 468px) {
+@media (min-width: 448px) {
     .img-chaves {
         display: flex;
         justify-content: space-around;
     }
 
+    /*
+    
     #carrossel {
         display: none;
     }
+
+    */
+
+    #slideshow-example {
+        display: none;
+    }
+
+    
 
     .img-chaves > img {
         width: 140px;
