@@ -146,6 +146,7 @@
 
 }
 
+
 @media (min-width: 992px) {
     .paragrafo > p {
         padding: 0px 50px;
@@ -157,10 +158,18 @@
     }
 }
 
+
+
 @media (min-width: 1320px) {
     .img-chaves > img {
         width: 430px;
         height: 575px;
+    }
+}
+
+@media (min-width: 1358px) {
+    .icones > a {
+        display: inline;
     }
 }
 
