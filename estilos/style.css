@@ -258,7 +258,7 @@ main.corpo > section.servicos {
 
 .endereco > h2{
     font-family: 'Outfit', sans-serif;
-    padding-top: 90px;
+    padding-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 25px;
@@ -282,6 +282,7 @@ main.corpo > section.servicos {
     padding: 50px 0px;
     font-size: 1.5em;
     font-family: 'Outfit', sans-serif;
+    
 }
 
 .contato > h1 {
@@ -294,11 +295,13 @@ main.corpo > section.servicos {
     display: block;
     margin: auto;
     width: fit-content;
+    box-sizing: border-box;
 }
 
 .icones > a > img {
     height: 30px;
     border-radius: 50%;
+    box-sizing: border-box;
 
 }
 
