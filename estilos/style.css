@@ -42,6 +42,12 @@ header.cabecalho > div.logo {
     top: -2%;
     left: -25px;
     opacity: .8;
+    /* 
+    
+    Como tirar fundo da imagem:
+    mix-blend-mode: multiply;
+    
+    */
 }
 
 header.cabecalho > div.logo > img {
@@ -309,7 +315,9 @@ footer {
     max-width: 1920px;
     text-align: center;
     margin-top: 30px;
-    background-color: black;
+    background-color: rgb(117, 117, 117);
     color: white;
     padding: 15px;
+    font-size: .9em;
+    line-height: 1.7em;
 }
