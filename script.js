@@ -26,6 +26,16 @@ function click2Menu() {
     }   
 }
 
+function verificar() {
+    if (window.innerWidth >= 768) {
+        document.getElementById('verificar').href="https://web.whatsapp.com/send?phone=5511932982390&text=Olá, gostaria de solicitar um serviço."
+    } else {
+        document.getElementById('verificar').href="https://wa.me/5511932982390?text=Olá, gostaria de solicitar um serviço."
+    }
+}
+
+
+
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 
 // Aplica a todas as apresentações de slides que você define com o HTML escrito
