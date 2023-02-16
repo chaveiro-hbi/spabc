@@ -34,6 +34,21 @@ function verificar() {
     }
 }
 
+function verificar2() {
+    if (window.innerWidth >= 768) {
+        document.getElementById('verificar2').href="https://web.whatsapp.com/send?phone=5511932982390&text=Olá, gostaria de solicitar um serviço."
+    } else {
+        document.getElementById('verificar2').href="https://wa.me/5511932982390?text=Olá, gostaria de solicitar um serviço."
+    }
+}
+
+function verificar3() {
+    if (window.innerWidth >= 768) {
+        document.getElementById('verificar3').href="https://web.whatsapp.com/send?phone=5511941835936&text=Olá, gostaria de solicitar um serviço."
+    } else {
+        document.getElementById('verificar3').href="https://wa.me/5511941835936?text=Olá, gostaria de solicitar um serviço."
+    }
+}
 
 
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');
